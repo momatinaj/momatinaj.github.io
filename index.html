@@ -56,10 +56,13 @@
   
   
   
-    <meta name="theme-color" content="#1565c0" />
+    <meta name="theme-color" content="rgb(251, 191, 183)" />
   
 
   
+  
+    
+    <script src="/js/mathjax-config.js"></script>
   
 
   
@@ -79,8 +82,6 @@
       
       
       
-      
-        
       
         
       
@@ -238,9 +239,9 @@
 
       
       
-        
-      
 
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -266,8 +267,9 @@
   
     
       
-      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=B612+Mono:400,700%7COrbitron:400,700&display=swap">
+      
     
   
 
@@ -276,10 +278,49 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.7145a9a307b7b6e0cf40149bdecd66b5.css" />
+  <link rel="stylesheet" href="/css/wowchemy.ea4564c2a3f719974d2813edbd9cf419.css" />
 
   
 
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8RS68YQJQN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-8RS68YQJQN', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
 
 
   
@@ -298,15 +339,15 @@
   
 
   
-    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Matin&#39;s Website" />
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Matin Najafi" />
   
 
   
     <link rel="manifest" href="/index.webmanifest" />
   
 
-  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_2.png" />
+  <link rel="icon" type="image/png" href="/media/icon_hu98a98f82ec0e0ced2e8124f8e025f1bb_89850_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu98a98f82ec0e0ced2e8124f8e025f1bb_89850_180x180_fill_lanczos_center_2.png" />
 
   <link rel="canonical" href="https://momatinaj.github.io/" />
 
@@ -324,11 +365,11 @@
   
   <meta property="twitter:card" content="summary" />
   
-  <meta property="og:site_name" content="Matin&#39;s Website" />
+  <meta property="og:site_name" content="Matin Najafi" />
   <meta property="og:url" content="https://momatinaj.github.io/" />
-  <meta property="og:title" content="Matin&#39;s Website" />
-  <meta property="og:description" content="Ph.D. Student" /><meta property="og:image" content="https://momatinaj.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png" />
-    <meta property="twitter:image" content="https://momatinaj.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  <meta property="og:title" content="Matin Najafi" />
+  <meta property="og:description" content="Ph.D. Student" /><meta property="og:image" content="https://momatinaj.github.io/media/icon_hu98a98f82ec0e0ced2e8124f8e025f1bb_89850_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://momatinaj.github.io/media/icon_hu98a98f82ec0e0ced2e8124f8e025f1bb_89850_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta property="og:updated_time" content="2030-06-01T13:00:00&#43;00:00" />
@@ -361,7 +402,7 @@
 
 
 
-  <title>Matin&#39;s Website</title>
+  <title>Matin Najafi</title>
 </head>
 
 
@@ -439,7 +480,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">Matin&#39;s Website</a>
+      <a class="navbar-brand" href="/">Matin Najafi</a>
     </div>
     
 
@@ -452,7 +493,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">Matin&#39;s Website</a>
+      <a class="navbar-brand" href="/">Matin Najafi</a>
     </div>
     
 
@@ -649,43 +690,6 @@
         
         
 
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#contact" data-target="#contact"><span>Contact</span></a>
-        </li>
-
-        
-        
-
       
 
         
@@ -739,8 +743,6 @@
 
   <div class="page-body">
     
-
-
 
 
 
@@ -945,7 +947,7 @@
     <h1>Biography</h1>
 
     <div class="article-style">
-      <p>Matin Najafi is Ph.D. student at the University of Hong Kong under the supervision of Professor <a href="https://i.cs.hku.hk/~ckcheng/">Reynold Cheng</a>. His research focuses on analysis of large interconnected systems focusing on modeling complex graphs, and networks for systems at all scales, from interactions of proteins in a cell to interactions between humans in a society. He is currently designing and developing a new <a href=https://en.wikipedia.org/wiki/Network_motif>Network Motif Discovery</a> Algorithm.</p>
+      <p>Matin Najafi is a Ph.D. student at the University of Hong Kong under the supervision of Professor <a href="https://i.cs.hku.hk/~ckcheng/">Reynold Cheng</a>. His research focuses on analysis of large interconnected systems focusing on modeling complex graphs, and networks for systems at all scales, from interactions of proteins in a cell to interactions between humans in a society. He is currently designing and developing a new <a href=https://en.wikipedia.org/wiki/Network_motif>Network Motif Discovery</a> Algorithm.</p>
 <p>
   <i class="fas fa-download  pr-1 fa-fw"></i> Download my <a href="/uploads/demo_resume.pdf" target="_blank">resumé</a>.</p>
 
@@ -986,7 +988,7 @@
           <li>
             <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
-              <p class="course">BSc in Computer Science, 2016-20</p>
+              <p class="course">BSc in Computer Science, 2016 - 2020</p>
               <p class="institution">Sharif University of Technology</p>
             </div>
           </li>
@@ -1076,45 +1078,22 @@
   
 
   
+  <div class="col-md-12">
+    <p>For full list of skills please refer to this <a href="https://www.google.com">Link</a>.</p>
+
+  </div>
+  
 
   
   
   
   
-    
-  
   <div class="col-12 col-sm-4">
     
-    <div class="featurette-icon"><i class="fab fa-r-project"></i></div>
+    <div class="featurette-icon"><img src="/media/icons/python.svg" alt="python" class="svg-icon svg-baseline"></div>
     
-    <div class="section-subheading">R</div>
-    <p>90%</p>
-  </div>
-  
-  
-  
-  
+    <div class="section-subheading">Python</div>
     
-  
-  <div class="col-12 col-sm-4">
-    
-    <div class="featurette-icon"><i class="fas fa-chart-line"></i></div>
-    
-    <div class="section-subheading">Statistics</div>
-    <p>100%</p>
-  </div>
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-4">
-    
-    <div class="featurette-icon"><i class="fas fa-camera-retro"></i></div>
-    
-    <div class="section-subheading">Photography</div>
-    <p>10%</p>
   </div>
   
   
@@ -1122,10 +1101,87 @@
   
   <div class="col-12 col-sm-4">
     
-    <div class="featurette-icon">😄</div>
+    <div class="featurette-icon"><img src="/media/icons/neo4j.svg" alt="neo4j" class="svg-icon svg-baseline"></div>
     
-    <div class="section-subheading">Emojiness</div>
-    <p>100%</p>
+    <div class="section-subheading">Neo4j</div>
+    
+  </div>
+  
+  
+  
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><img src="/media/icons/keras.svg" alt="keras" class="svg-icon svg-baseline"></div>
+    
+    <div class="section-subheading">Keras</div>
+    
+  </div>
+  
+  
+  
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><img src="/media/icons/kubernetes.svg" alt="kubernetes" class="svg-icon svg-baseline"></div>
+    
+    <div class="section-subheading">Kubernetes</div>
+    
+  </div>
+  
+  
+  
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><img src="/media/icons/tensorflow.svg" alt="tensorflow" class="svg-icon svg-baseline"></div>
+    
+    <div class="section-subheading">TensorFlow</div>
+    
+  </div>
+  
+  
+  
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><img src="/media/icons/docker.svg" alt="docker" class="svg-icon svg-baseline"></div>
+    
+    <div class="section-subheading">Docker</div>
+    
+  </div>
+  
+  
+  
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><img src="/media/icons/django.svg" alt="django" class="svg-icon svg-baseline"></div>
+    
+    <div class="section-subheading">Django</div>
+    
+  </div>
+  
+  
+  
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><img src="/media/icons/pytorch.svg" alt="pytorch" class="svg-icon svg-baseline"></div>
+    
+    <div class="section-subheading">Pytorch</div>
+    
+  </div>
+  
+  
+  
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><img src="/media/icons/web.svg" alt="web" class="svg-icon svg-baseline"></div>
+    
+    <div class="section-subheading">Web</div>
+    
   </div>
   
 </div>
@@ -2730,243 +2786,6 @@
         <a href="/tag/%E5%BC%80%E6%BA%90/" style="font-size:0.7rem">开源</a>
       
     </div>
-  
-
-</div>
-
-
-    
-      </div>
-    
-
-    </div>
-  </section>
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="contact" class="home-section wg-contact  "  >
-   <div class="home-section-bg " ></div>
-    <div class="container">
-
-    
-      <div class="row  ">
-      
-        
-          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0">Contact</h1>
-            
-          </div>
-        
-      
-    
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="col-12 col-lg-8">
-  
-
-  
-
-    
-    
-      
-    
-
-    <div class="mb-3">
-      <form name="contact" method="POST" netlify netlify-honeypot="welcome-bot" >
-        <div class="form-group form-inline">
-          <label class="sr-only" for="inputName">Name</label>
-          <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" required>
-        </div>
-        <div class="form-group form-inline">
-          <label class="sr-only" for="inputEmail">Email</label>
-          <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Email" required>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" for="inputMessage">Message</label>
-          <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Message" required></textarea>
-        </div>
-        
-          <div class="d-none">
-            <label>Do not fill this field unless you are a bot: <input name="welcome-bot"></label>
-          </div>
-          
-        
-        <button type="submit" class="btn btn-outline-primary px-3 py-2">Send</button>
-      </form>
-    </div>
-  
-
-  <ul class="fa-ul">
-
-    
-    <li>
-      <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
-      <span id="person-email"><a href="mailto:test@example.org">test@example.org</a></span>
-    </li>
-    
-
-    
-    <li>
-      <i class="fa-li fas fa-phone fa-2x" aria-hidden="true"></i>
-      <span id="person-telephone"><a href="tel:888%20888%2088%2088">888 888 88 88</a></span>
-    </li>
-    
-
-    
-    
-      
-      <li>
-        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
-        <span id="person-address">450 Serra Mall, Stanford, CA 94305</span>
-      </li>
-    
-
-    
-    <li>
-      <i class="fa-li fas fa-compass fa-2x" aria-hidden="true"></i>
-      <span>Enter Building 1 and take the stairs to Office 200 on Floor 2</span>
-    </li>
-    
-
-    
-    <li>
-      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
-      <span>Monday 10:00 to 13:00<br>Wednesday 09:00 to 10:00</span>
-    </li>
-    
-
-    
-    <li>
-      <i class="fa-li fas fa-calendar-check fa-2x" aria-hidden="true"></i>
-      <a href="https://calendly.com" target="_blank" rel="noopener">Book an appointment</a>
-    </li>
-    
-
-    
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <i class="fa-li fab fa-twitter fa-2x" aria-hidden="true"></i>
-      <a href="https://twitter.com/Twitter" target="_blank" rel="noopener">DM Me</a>
-    </li>
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    
-    <li>
-      <i class="fa-li fab fa-skype fa-2x" aria-hidden="true"></i>
-      <a href="skype:echo123?call" >Skype Me</a>
-    </li>
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <i class="fa-li fab fa-keybase fa-2x" aria-hidden="true"></i>
-      <a href="https://keybase.io/" target="_blank" rel="noopener">Chat on Keybase</a>
-    </li>
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <i class="fa-li fas fa-comments fa-2x" aria-hidden="true"></i>
-      <a href="https://discourse.gohugo.io" target="_blank" rel="noopener">Discuss on Forum</a>
-    </li>
-    
-
-  </ul>
-
   
 
 </div>

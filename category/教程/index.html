@@ -56,10 +56,13 @@
   
   
   
-    <meta name="theme-color" content="#1565c0" />
+    <meta name="theme-color" content="rgb(251, 191, 183)" />
   
 
   
+  
+    
+    <script src="/js/mathjax-config.js"></script>
   
 
   
@@ -214,17 +217,9 @@
 
       
       
-        
-      
 
       
-    
-      
-      
-
-      
-      
-
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -235,6 +230,14 @@
 
       
     
+      
+      
+
+      
+      
+
+      
+    
   
 
   
@@ -242,8 +245,9 @@
   
     
       
-      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=B612+Mono:400,700%7COrbitron:400,700&display=swap">
+      
     
   
 
@@ -252,35 +256,74 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.7145a9a307b7b6e0cf40149bdecd66b5.css" />
-
-  
-
-
-
-  
-
-  
+  <link rel="stylesheet" href="/css/wowchemy.ea4564c2a3f719974d2813edbd9cf419.css" />
 
   
 
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8RS68YQJQN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-8RS68YQJQN', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+  
+
+
+
+
   
   
   
 
   
-    <link rel="alternate" href="/category/%E6%95%99%E7%A8%8B/index.xml" type="application/rss+xml" title="Matin&#39;s Website" />
+    <link rel="alternate" href="/category/%E6%95%99%E7%A8%8B/index.xml" type="application/rss+xml" title="Matin Najafi" />
   
 
   
     <link rel="manifest" href="/index.webmanifest" />
   
 
-  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_2.png" />
+  <link rel="icon" type="image/png" href="/media/icon_hu98a98f82ec0e0ced2e8124f8e025f1bb_89850_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu98a98f82ec0e0ced2e8124f8e025f1bb_89850_180x180_fill_lanczos_center_2.png" />
 
   <link rel="canonical" href="https://momatinaj.github.io/category/%E6%95%99%E7%A8%8B/" />
 
@@ -298,11 +341,11 @@
   
   <meta property="twitter:card" content="summary" />
   
-  <meta property="og:site_name" content="Matin&#39;s Website" />
+  <meta property="og:site_name" content="Matin Najafi" />
   <meta property="og:url" content="https://momatinaj.github.io/category/%E6%95%99%E7%A8%8B/" />
-  <meta property="og:title" content="教程 | Matin&#39;s Website" />
-  <meta property="og:description" content="Ph.D. Student" /><meta property="og:image" content="https://momatinaj.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png" />
-    <meta property="twitter:image" content="https://momatinaj.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  <meta property="og:title" content="教程 | Matin Najafi" />
+  <meta property="og:description" content="Ph.D. Student" /><meta property="og:image" content="https://momatinaj.github.io/media/icon_hu98a98f82ec0e0ced2e8124f8e025f1bb_89850_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://momatinaj.github.io/media/icon_hu98a98f82ec0e0ced2e8124f8e025f1bb_89850_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta property="og:updated_time" content="2020-12-13T00:00:00&#43;00:00" />
@@ -321,7 +364,7 @@
 
 
 
-  <title>教程 | Matin&#39;s Website</title>
+  <title>教程 | Matin Najafi</title>
 </head>
 
 
@@ -399,7 +442,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">Matin&#39;s Website</a>
+      <a class="navbar-brand" href="/">Matin Najafi</a>
     </div>
     
 
@@ -412,7 +455,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">Matin&#39;s Website</a>
+      <a class="navbar-brand" href="/">Matin Najafi</a>
     </div>
     
 
@@ -604,43 +647,6 @@
 
         <li class="nav-item">
           <a class="nav-link " href="/#featured"><span>Publications</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#contact"><span>Contact</span></a>
         </li>
 
         
