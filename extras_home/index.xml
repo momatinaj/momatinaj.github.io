@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Extras_homes | Matin Najafi</title>
+    <link>https://momatinaj.github.io/extras_home/</link>
+      <atom:link href="https://momatinaj.github.io/extras_home/index.xml" rel="self" type="application/rss+xml" />
+    <description>Extras_homes</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://momatinaj.github.io/media/icon_hu98a98f82ec0e0ced2e8124f8e025f1bb_89850_512x512_fill_lanczos_center_2.png</url>
+      <title>Extras_homes</title>
+      <link>https://momatinaj.github.io/extras_home/</link>
+    </image>
+    
+    <item>
+      <title>Popular Topics</title>
+      <link>https://momatinaj.github.io/extras_home/tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://momatinaj.github.io/extras_home/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://momatinaj.github.io/extras_home/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://momatinaj.github.io/extras_home/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://momatinaj.github.io/extras_home/talks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://momatinaj.github.io/extras_home/talks/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
